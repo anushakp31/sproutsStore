@@ -4,3 +4,7 @@
 node_modules
 dist
 .cache
+.gitignore
+404.html
+.htaccess
+
