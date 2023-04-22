@@ -44,7 +44,7 @@ and open the template in the editor.
     }
     </style>
 
-    <title>AngelCare Hospital</title>
+    <title>Arlington Sprouts</title>
 
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
 
@@ -60,12 +60,13 @@ and open the template in the editor.
 
             <a href="index.php" class="onHover">Home</a>
 
-            <a href="about.html" class="onHover">About</a>
+            <a href=#blank class="onHover">About</a>
+          <a href="search.php" class="onHover">Products</a>
 
 
-            <a href="search.html" class="onHover">Login</a>
-            <a href="newuser.html" class="onHover">Register</a>
-            <a href="locations.html" class="onHover">Location</a>
+            <a href=#blank class="onHover">Login</a>
+            <a href=#blank class="onHover">Register</a>
+            <a href=#blank class="onHover">Location</a>
             &emsp; &emsp;
 
         </div>
@@ -76,17 +77,7 @@ and open the template in the editor.
 
 <!--<div class="background-banner">-->
 <img class="banner responsive" src="images/backgroundImage.png " style="height: 760px;"/>
-<div class="cards">
-    <div class="card">
-        <a href="bookAppoint.html">Request an Appointment</a>
-    </div>
-    <div class="card">
-        <a href="patientlogin.html"> Login as Patient</a>
-    </div>
-    <div class="card">
-        <td><a href="doctorlogin.html">Login as Doctor</a>
-    </div>
-</div>
+
 
 <div class="specialty">
     <div class="headline"> Why choose <br> Arlington Sprouts ?</div>

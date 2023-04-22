@@ -1,6 +1,6 @@
 
 body {
-  font-family: "Calisto MT";
+  font-family: "Comic Sans MS";
 
 }
 
@@ -11,9 +11,12 @@ body {
   position: relative;
 
 }
-
+#myUL li a:nth-child(1){
+  color: black;
+}
 a {
   text-decoration: none;
+  color: black;
 }
 
 .header a {
@@ -138,25 +141,37 @@ a {
   list-style-type: none;
   padding: 0;
   margin: 0;
+
 }
 
 #myUL li {
-  border: 1px solid #ddd;
+  border: 1px solid lavender;
   margin-top: -1px; /* Prevent double borders */
   background-color: #f6f6f6;
   padding: 12px;
   text-decoration: none;
   font-size: 18px;
-  color: black;
+
   display: block;
+  color: rebeccapurple;
 }
 
 #myUL li:hover {
-  background-color: #eee;
+  background-color: lavender;
 }
 
 
+#insert-button{
+  border-radius: 5px;
+  border: 1px solid rebeccapurple;
+  width: 100px;
+  height: 30px;
+  font-weight: bold;
 
+}
+#insert-button:hover{
+  transform: scale(1.1);
+}
 #modal-box {
   position: fixed;
   top: 0;
@@ -200,7 +215,7 @@ a {
 }
 
 #modal-content button[type="submit"] {
-  background-color: #007bff;
+  background-color: rebeccapurple;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -209,7 +224,7 @@ a {
 }
 
 #modal-content button[type="submit"]:hover {
-  background-color: #0069d9;
+  transform:scale(1.1);
 }
 
 #modal-content button[type="button"] {
@@ -226,7 +241,59 @@ a {
   background-color: #ddd;
 }
 
+.details-box{
 
+}
+.UpdateButton,.DeleteButton{
+  border-radius: 5px;
+  background:lavender;
+  border: 1px solid rebeccapurple;
+  float: right;
+  padding: 8px;
+margin-left: 20px;
+  font-weight: bold;
+
+}
+#delete-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: none;
+}
+
+#delete-modal-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: lavender;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 10000;
+  text-align: center;
+  display: none;
+}
+#confirm-delete-button{
+  background-color: rebeccapurple;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#cancel-delete-button{
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 .footer {
   background-color: white;
   height: 65px;

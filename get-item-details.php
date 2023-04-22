@@ -10,8 +10,8 @@ $result = mysqli_query($db, $sql);
 // Display the item details as HTML
 if (mysqli_num_rows($result) > 0) {
   $row = mysqli_fetch_assoc($result);
-  echo "<h3>" . $row['Iname'] . "</h3>";
-  echo "<p>" . $row['Sprice'] . "</p>";
+  echo "<h3>"."ItemName : ". $row['Iname'] . "</h3>";
+  echo "<h3>" ."ItemPrice : ". $row['Sprice'] . "</h3>";
 
 } else {
   echo "Item not found.";
