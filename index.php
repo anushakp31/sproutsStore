@@ -1,19 +1,6 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
-        <?php
-        // put your code here
-        ?>
-        <!DOCTYPE html>
+
+
 <html>
 <head>
     <link rel="stylesheet" href="stylesheet.css">
@@ -22,9 +9,6 @@ and open the template in the editor.
             box-sizing: border-box;
         }
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
 	.responsive{
 		width: 100%;
 		height: auto;
@@ -54,7 +38,7 @@ and open the template in the editor.
     <div class="header">
 
         <a href="index.php" class="logo"> <img src="images/logo1.png" height="50" width="60"></a>
-        <a href="index.php" class="name" style="font-family:Brush Script MT ; font-size: 25px">ArlingtonSprouts</a>
+        <a href="index.php" class="name" style="font-family:'Garamond' ; font-size: 25px; font-style: italic" >ArlingtonSprouts</a>
 
         <div class="header-right">
 

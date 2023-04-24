@@ -37,7 +37,7 @@ mysqli_close($db);
   <div class="header">
 
     <a href="index.php" class="logo"> <img src="images/logo1.png" height="50" width="60"></a>
-    <a href="index.php" class="name" style="font-family:Brush Script MT ; font-size: 25px">ArlingtonSprouts</a>
+    <a href="index.php" class="name" style="font-family:Garamond ; font-size: 25px; font-style: italic"">ArlingtonSprouts</a>
 
     <div class="header-right">
 
@@ -200,7 +200,8 @@ if (mysqli_num_rows($result) > 0) {
 
     const inputField = document.createElement('input');
     inputField.value = itemName;
-
+    const updateButtonOnClick=listItem.querySelector('.UpdateButton')
+    updateButtonOnClick.style.display='none';
     itemNameLink.replaceWith(inputField);
 
     const updateButton = listItem.querySelector('button');
@@ -241,7 +242,7 @@ if (mysqli_num_rows($result) > 0) {
           }
           //listItem.querySelector('a:nth-of-type(1)').replaceWith(itemName);
 
-          const updateButton = listItem.querySelector('button');
+          const updateButton = listItem.querySelector('button:nth-of-type(1)');
           updateButton.textContent = 'Update';
           updateButton.onclick = function() {
             editName(itemId, listItem);
